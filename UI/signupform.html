@@ -1,36 +1,61 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>signupform</title>
-  </head>
-  <body>
-    <form class="" action="homepage.html" method="get">
+<html>
 
-      <label for="fname">User Name:</label>
-      <input id="fname" type="text" name="" placeholder="First Name" required>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width">
+  <meta name="author" content="Kiwooma Haruna">
+  <title>SlackOverflow lite | Sign Up</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" media="screen" href="./css/style.css" />
+  <script src="main.js"></script>
+</head>
 
-      <p></p>
-      <label for="mail">Email</label>
-      <input id="mail" type="email" name="" placeholder="user@email.com" required>
+<body>
+  <header>
+    <div class="container">
+      <div id="brand">
+        <h1>SlackOverflow-lite</h1>
+      </div>
+      <nav>
+        <ul>
+          <li>
+            <a href="index.html">Home</a>
+          </li>
+          <li class="current">
+            <a href="loginform.html">Login</a>
+          </li>
+          <li>
+            <a href="blogpage.html">Blog</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-      <label for="pwd">Password</label>
-      <input id="pwd" type="password" name="" value="" placeholder="*********" required>
+  <section class="signup">
+    
+    <br>
+    <br>
+    <br>
+    <h1>Look within. Within is the foutain of good, and it will ever bubble up if thou wilt ever dig!</h1>
 
-      <!-- <p>Gender</p>
-      <select class="" name="payement">
-        <option value="female">Credit Card</option>
-        <option value="male">PayPal</option>
-      </select> -->
-      <p></p>
+  </section>
 
-      <input type="submit" name="" value="Sign up">
+  <section id="showcase">
+  <form class="sign" action="blogpage.html" method="get">
+      <input type="email" name="user email" placeholder="user@email.com" required>
+      <input type="password" name="account password" placeholder="New password" required>
+      <input type="password" name="account password" placeholder="Repeat password" required>
+      <input type="submit" value="Sign Up">
+  </form>
+  </section>
 
-    </form>
+  <footer id="signupfooter">
+    <p>SlackOverflow-lite, Copyright &copy; 2018</p>
+  </footer>
 
-    <form class="loginform" action=".html" method="get">
-      <input type="submit" name="" value="Login">
+</body>
 
-    </form>
-  </body>
 </html>
