@@ -164,7 +164,7 @@ footer{
 }
 
 #blogfooter{
-    margin-top: 720px
+    margin-top: 1024px
 }
 
 /* login form */
@@ -339,7 +339,7 @@ footer{
   position: relative;
   display: inline-block;
   width: 80px;
-  height: 34px;
+  height: 25px;
   color: blue;
 }
 

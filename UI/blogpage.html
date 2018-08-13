@@ -48,8 +48,12 @@
 
 <section id="showcase">
     <div class="question">
-        <a href="loginform.html"> Ask Question</a>
-        <br>
+        
+        <h1>Post a Question</h1>
+        <form action="blogpage.html" method="post">
+            <textarea name="question" placeholder="Write Question....." cols="100" rows="10"></textarea>
+            <input type="button" name="submit" value="submit">
+        </form>
         <h2>Recent question</h2>
         
             <div id="delete1" class="box">
@@ -82,12 +86,11 @@
                     <input type="submit" value="Remove" />
                 </form>
                 <br>
-                
-            
+                        
             <form action="blogpage.html">
-                           <textarea name="reply" placeholder="Reply....." id="" cols="60" rows="5"></textarea>
-                            <input type="button" name="submit" value="submit">
-                        </form>
+               <textarea name="reply" placeholder="Reply....." id="" cols="60" rows="5"></textarea>
+               <input type="button" name="submit" value="submit">
+            </form>
             <br>
         </div>
         
@@ -106,11 +109,9 @@
                 </label>
             </div>
             <br>
-            <br>
             <p>How can i install git on windows xp</p>
             <br>
-            <br>
-            <form onsubmit="return remove2(); ">
+            <form onsubmit="return remove2();">
                 <input type="submit" value="Remove" />
             </form>
             <br>
@@ -137,6 +138,9 @@
             </form>
             
         </div>
+        
+            
+            
 
     </div>
 </section>
