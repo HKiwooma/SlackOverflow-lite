@@ -43,14 +43,36 @@ class Fetch(Resource,Blog, Supporter):
 class FetchSpecific(Resource, Blog, Supporter):
     """ Display specific questions"""
 
-    def get(self,questionId):
+    def get(self, questionId):
         try:
-            Id=int(questionId)
+            spec=int(questionId)
         except ValueError:
             return('Non-numeric data found in the file.')
         else:
             for string in self.container:
-                if string["id"] == Id:
+                if string["id"] == spec:
                     return self.response(string)
             return("Sorry Id provide does not exist")
 
+
+class AnswerSpecific(Resource, Blog, Supporter):
+    """Post answer to specific question"""
+
+    def post(self, questionId):
+
+        try:
+            spec = int(questionId)
+        except ValueError:
+            return('Non-numeric data found in the file.')
+        else:
+            for string in self.container:
+                if string["id"] == spec:
+                    # "comment" = self.response(string)
+                    if request.content_type == 'application/json':
+                        comment = request.get_json()
+                        post = comment["Note"]
+                        string["comment"] = post
+                        return self.response("success")
+                    return self.response("not success")
+
+        return("Sorry Id provide does not exist")
