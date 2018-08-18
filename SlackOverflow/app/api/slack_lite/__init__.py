@@ -19,5 +19,3 @@ api.add_resource(FetchSpecific, '/api/v1/questions/<questionId>')
 api.add_resource(AnswerSpecific, '/api/v1/questions/<questionId>/answers')
 
 
-
-
