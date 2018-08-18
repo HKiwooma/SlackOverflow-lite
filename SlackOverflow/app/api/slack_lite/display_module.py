@@ -39,3 +39,18 @@ class Fetch(Resource,Blog, Supporter):
         content = self.container
         return self.response(content)
 
+
+class FetchSpecific(Resource, Blog, Supporter):
+    """ Display specific questions"""
+
+    def get(self,questionId):
+        try:
+            Id=int(questionId)
+        except ValueError:
+            return('Non-numeric data found in the file.')
+        else:
+            for string in self.container:
+                if string["id"] == Id:
+                    return self.response(string)
+            return("Sorry Id provide does not exist")
+

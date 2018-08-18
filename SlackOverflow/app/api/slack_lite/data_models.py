@@ -5,7 +5,7 @@
 
 class Blog():
 
-    counter = [0]
+    counter = [1,]
     container = []
     questions = dict()
     answer = dict()
@@ -21,7 +21,7 @@ class Blog():
         """Question id generation"""
 
         self.counter[0] += 3
-        return self.counter
+        return self.counter[0]
 
     def post_answer(self): 
         """capturing posted answer"""
