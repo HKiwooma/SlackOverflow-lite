@@ -5,10 +5,11 @@
 
 class Blog():
 
-    counter = 0
+    counter = [0]
     container = []
     questions = dict()
     answer = dict()
+    incrementer = 1
 
 
     def data_post(self,question):
@@ -18,7 +19,8 @@ class Blog():
 
     def id_generator(self):
         """Question id generation"""
-        self.counter += 30
+
+        self.counter[0] += 3
         return self.counter
 
     def post_answer(self): 
@@ -29,7 +31,8 @@ class Blog():
         """capturing question """
         if question != "":
             self.questions = {"id": self.id_generator(), "question": question}
-            question_post = self.data_post(self.questions)
+            #question post
+            self.data_post(self.questions)
             return True
         return False
     

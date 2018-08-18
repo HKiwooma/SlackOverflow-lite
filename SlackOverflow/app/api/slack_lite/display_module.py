@@ -31,3 +31,11 @@ class Query(Resource, Blog, Supporter):
                 return self.response("Bravo! Your question is posted.")
             return self.response("Enble to display question sorry!")
         
+
+class Fetch(Resource,Blog, Supporter):
+    """ Display all questions"""
+
+    def get(self):
+        content = self.container
+        return self.response(content)
+
