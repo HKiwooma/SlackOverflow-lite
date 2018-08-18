@@ -1,4 +1,7 @@
-"""Data module or user flow"""
+"""
+    Data module or user flow
+
+"""
 
 class Blog():
 
