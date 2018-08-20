@@ -2,7 +2,7 @@ from flask import Flask
 
 from app.config import app_config
 
-from app.api.slack_lite import posts
+from app.slack_lite import posts
 
 
 def create_app():

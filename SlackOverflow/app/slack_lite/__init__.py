@@ -6,7 +6,7 @@ from flask import Blueprint
 
 from flask_restful import Api
 
-from app.api.slack_lite.display_module import Query, Fetch, FetchSpecific, AnswerSpecific
+from app.slack_lite.views import Query, Fetch, FetchSpecific, AnswerSpecific
 
 
 posts = Blueprint("posts", __name__)
