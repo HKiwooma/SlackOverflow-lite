@@ -7,7 +7,6 @@
     <meta name="viewport" content="width=device-width">
     <meta name="author" content="Kiwooma Haruna">
     <title>SlackOverflow lite | Blog</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="./css/style.css" />
     <script src="./js/script.js"></script>
 </head>
@@ -34,94 +33,74 @@
         </div>
     </header>
 
-<section class="signup">
-    <br><br><br>
+    <section class="signup">
+        <br>
+        <br>
+        <br>
 
-    <form id="search" action="blogpage.html" method="GET" >
-        <input type="text" placeholder="Search.." name="search2">
-        <input type="submit" placeholder="Search">
-    </form>
-    <br>
-
-
-</section>
-
-<section id="showcase">
-    <div class="question">
-        
-        <h1>Post a Question</h1>
-        <form action="blogpage.html" method="post">
-            <textarea name="question" placeholder="Write Question....." cols="100" rows="10"></textarea>
-            <input type="button" name="submit" value="submit">
+        <form id="search" action="blogpage.html" method="GET">
+            <input type="text" placeholder="Search.." name="search2">
+            <input type="submit" placeholder="Search">
         </form>
-        <h2>Recent question</h2>
-        
+        <br>
+
+
+    </section>
+
+    <section id="showcase">
+        <div class="question">
+
+            <h1>Post a Question</h1>
+            <form action="blogpage.html" method="post">
+                <textarea name="question" placeholder="Write Question....." cols="100" rows="10"></textarea>
+                <input type="button" name="submit" value="submit">
+            </form>
+            <h2>Recent question</h2>
+
             <div id="delete1" class="box">
                 <h3>Question 1</h3>
 
-            
-            <!-- Rounded switch -->
+
+                <!-- Rounded switch -->
                 <div class="switchlike">
-                    <label class="link"><b>Vote Like</b></label>
+                    <label class="link">
+                        <b>Vote Like</b>
+                    </label>
                     <label class="switchlike">
                         <input type="checkbox">
                         <span class="slider round"></span>
                     </label>
-                       <input type="button" name="">
+                    <input type="button" name="">
                 </div>
-                    <p>
-                        #include"conio.h"
-                        <br> #include"stdio.h"
-                        <br> main(){
-                        <br> float n=5/2;
-                        <br> printf("%f",n);
-                        <br> getch();
-                        <br> }
-                        <br> why is my output 2.00 though i expect 2.50 in c language
-                    
-                    </p>
+                <p>
+                    #include"conio.h"
+                    <br> #include"stdio.h"
+                    <br> main(){
+                    <br> float n=5/2;
+                    <br> printf("%f",n);
+                    <br> getch();
+                    <br> }
+                    <br> why is my output 2.00 though i expect 2.50 in c language
+
+                </p>
                 <!-- <button>Remove</button> -->
-                 
+
                 <form onsubmit="return remove1(); ">
                     <input type="submit" value="Remove" />
                 </form>
                 <br>
-                        
-            <form action="blogpage.html">
-               <textarea name="reply" placeholder="Reply....." id="" cols="60" rows="5"></textarea>
-               <input type="button" name="submit" value="submit">
-            </form>
-            <br>
-        </div>
-        
 
-        <div id="delete2" class="box">
-            <h3>Question 2</h3>
-
-            <!-- Rounded switch -->
-            <div class="switchlike">
-                <label class="link">
-                    <b>Vote Like</b>
-                </label>
-                <label class="switchlike">
-                    <input type="checkbox">
-                    <span class="slider round"></span>
-                </label>
+                <form action="blogpage.html">
+                    <textarea name="reply" placeholder="Reply....." id="" cols="60" rows="5"></textarea>
+                    <input type="button" name="submit" value="submit">
+                </form>
+                <br>
             </div>
-            <br>
-            <p>How can i install git on windows xp</p>
-            <br>
-            <form onsubmit="return remove2();">
-                <input type="submit" value="Remove" />
-            </form>
-            <br>
-            <br>
-            
-            <form action="blogpage.html" method="GET">
-                <textarea name="comment" id="" cols="60" rows="2">Upgrade to windows please</textarea>
-                
-                <input type="submit" name="delete" value="delete" placeholder="delete" >
-                
+
+
+            <div id="delete2" class="box">
+                <h3>Question 2</h3>
+
                 <!-- Rounded switch -->
                 <div class="switchlike">
                     <label class="link">
@@ -132,23 +111,47 @@
                         <span class="slider round"></span>
                     </label>
                 </div>
+                <br>
+                <p>How can i install git on windows xp</p>
+                <br>
+                <form onsubmit="return remove2();">
+                    <input type="submit" value="Remove" />
+                </form>
+                <br>
+                <br>
 
-                <textarea name="reply" placeholder="Reply....." id="" cols="60" rows="5"></textarea>
-                <input type="submit" name="submit" value="submit">
-            </form>
-            
+                <form action="blogpage.html" method="GET">
+                    <textarea name="comment" id="" cols="60" rows="2">Upgrade to windows please</textarea>
+
+                    <input type="submit" name="delete" value="delete" placeholder="delete">
+
+                    <!-- Rounded switch -->
+                    <div class="switchlike">
+                        <label class="link">
+                            <b>Vote Like</b>
+                        </label>
+                        <label class="switchlike">
+                            <input type="checkbox">
+                            <span class="slider round"></span>
+                        </label>
+                    </div>
+
+                    <textarea name="reply" placeholder="Reply....." id="" cols="60" rows="5"></textarea>
+                    <input type="submit" name="submit" value="submit">
+                </form>
+
+            </div>
+
+
+
+
         </div>
-        
-            
-            
-
-    </div>
-</section>
+    </section>
 
 
-<footer id="blogfooter">
-    <p>SlackOverflow-lite, Copyright &copy; 2018</p>
-</footer>
+    <footer id="blogfooter">
+        <p>SlackOverflow-lite, Copyright &copy; 2018</p>
+    </footer>
 
 
 </body>
