@@ -6,7 +6,7 @@ from flask_restful import Resource
 
 from flask import request
 
-from app.slack_lite.models import Blog
+from app.api.models import Blog
 
 from flask import jsonify, make_response
 
